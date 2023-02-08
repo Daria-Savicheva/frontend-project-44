@@ -3,4 +3,4 @@
 
 <a href="https://codeclimate.com/github/Daria-Savicheva/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/baeca1e2466c0bbc9efa/maintainability" /></a>
 
-https://asciinema.org/a/558333
+<a href="https://asciinema.org/a/558332" target="_blank"><img src="https://asciinema.org/a/558332.svg" /></a>
