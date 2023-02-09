@@ -5,22 +5,22 @@ import roundResult from '../index.js';
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const min = 2;
 const max = 100;
+function isPrime(number) {
+  if (number === 2) return true;
+  let i = 2;
+  const limit = Math.sqrt(number);
+  while (i <= limit) {
+    if (number % i === 0) {
+      return false;
+    }
+    i += 1;
+  }
+  return true;
+}
 
 export default function prime() {
   const userName = welcomeUser();
   console.log(rules);
-  function isPrime(n) {
-    if (n === 2) return true;
-    let i = 2;
-    const limit = Math.sqrt(n);
-    while (i <= limit) {
-      if (n % i === 0) {
-        return false;
-      }
-      i += 1;
-    }
-    return true;
-  }
   for (let i = 0; i < 3; i += 1) {
     const random = randomNum(min, max);
     const questionGame = readlineSync.question(`Question: ${random} \nYour answer: `);
