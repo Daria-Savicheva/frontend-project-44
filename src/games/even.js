@@ -5,10 +5,10 @@ import roundResult from '../index.js';
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const min = 1;
 const max = 20;
+const userName = welcomeUser();
+console.log(rules);
 
 export default function even() {
-  const userName = welcomeUser();
-  console.log(rules);
   for (let i = 0; i < 3; i += 1) {
     const random = randomNum(min, max);
     const questionGame = readlineSync.question(`Question: ${random} \nYour answer: `);

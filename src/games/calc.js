@@ -5,14 +5,14 @@ import roundResult from '../index.js';
 const rules = 'What is the result of the expression?';
 const min = 1;
 const max = 10;
+const arrayOperator = ['+', '-', '*'];
+const userName = welcomeUser();
+console.log(rules);
 
 export default function calc() {
-  const userName = welcomeUser();
-  console.log(rules);
   for (let i = 0; i < 3; i += 1) {
     const firstNum = randomNum(min, max);
     const secondNum = randomNum(min, max);
-    const arrayOperator = ['+', '-', '*'];
     const randomOperator = arrayOperator[randomNum(0, 2)];
     const questionGame = readlineSync.question(`Question: ${firstNum} ${randomOperator} ${secondNum} \nYour answer: `);
     let rightAnswer = 0;

@@ -18,9 +18,10 @@ function isPrime(number) {
   return true;
 }
 
+const userName = welcomeUser();
+console.log(rules);
+
 export default function prime() {
-  const userName = welcomeUser();
-  console.log(rules);
   for (let i = 0; i < 3; i += 1) {
     const random = randomNum(min, max);
     const questionGame = readlineSync.question(`Question: ${random} \nYour answer: `);

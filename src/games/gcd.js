@@ -11,9 +11,10 @@ function NOD(a, b) {
   return NOD(b, a % b);
 }
 
+const userName = welcomeUser();
+console.log(rules);
+
 export default function gcd() {
-  const userName = welcomeUser();
-  console.log(rules);
   for (let i = 0; i < 3; i += 1) {
     const firstNum = randomNum(min, max);
     const secondNum = randomNum(min, max);

@@ -3,10 +3,10 @@ import { welcomeUser, randomNum } from '../cli.js';
 import roundResult from '../index.js';
 
 const rules = 'What number is missing in the progression?';
+const userName = welcomeUser();
+console.log(rules);
 
 export default function progression() {
-  const userName = welcomeUser();
-  console.log(rules);
   function arrayProgression() {
     let ranNumber = randomNum(1, 20);
     const stepProgression = randomNum(1, 9);
