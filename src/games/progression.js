@@ -22,7 +22,7 @@ export default function progression() {
     const changedSymbol = randomNum(0, 9);
     const rightAnswer = progressionNumbers[changedSymbol];
     const getChangeSymbolInProgression = progressionNumbers.fill('..', changedSymbol, changedSymbol + 1);
-    const questionGame = readlineSync.question(`Question: ${getChangeSymbolInProgression} \nYour answer: `);
+    const questionGame = readlineSync.question(`Question: ${getChangeSymbolInProgression.join(' ')} \nYour answer: `);
     const usersAnswer = Number(questionGame);
     const finishGame = roundResult(rightAnswer, usersAnswer, userName);
     console.log(finishGame);
