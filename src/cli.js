@@ -8,7 +8,7 @@ export function welcomeUser() {
   return name;
 }
 
-export function randomNum(min, max) {
+export function getRandomNum(min, max) {
   const x = Math.floor(Math.random() * (max - min + 1) + min);
   return x;
 }

@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import { welcomeUser, randomNum } from '../cli.js';
-import roundResult from '../index.js';
+import { welcomeUser, getRandomNum } from '../cli.js';
+import getRoundResult from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const min = 2;
@@ -18,17 +18,17 @@ function isPrime(number) {
   return true;
 }
 
-const userName = welcomeUser();
+const getUserName = welcomeUser();
 console.log(rules);
 
 export default function prime() {
   for (let i = 0; i < 3; i += 1) {
-    const random = randomNum(min, max);
+    const random = getRandomNum(min, max);
     const questionGame = readlineSync.question(`Question: ${random} \nYour answer: `);
-    const rightAnswer = isPrime(random) ? 'yes' : 'no';
-    const finishGame = roundResult(rightAnswer, questionGame, userName);
+    const isRightAnswer = isPrime(random) ? 'yes' : 'no';
+    const finishGame = getRoundResult(isRightAnswer, questionGame, getUserName);
     console.log(finishGame);
     if (finishGame !== 'Correct!') return;
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${getUserName}!`);
 }
