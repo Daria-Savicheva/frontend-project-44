@@ -36,4 +36,8 @@
 <a href="https://asciinema.org/a/558603" target="_blank"><img src="https://asciinema.org/a/558603.svg" /></a>
 
 <h3>5. Brain-prime</h3>
+<<<<<<< HEAD
 <a href="https://asciinema.org/a/558641" target="_blank"><img src="https://asciinema.org/a/558641.svg" /></a>
+=======
+<a href="https://asciinema.org/a/558641" target="_blank"><img src="https://asciinema.org/a/558641.svg" /></a>
+>>>>>>> 385a9a4b6c291478bd70b6a9eb2cc74a27eb4941
